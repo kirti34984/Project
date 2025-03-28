@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            background-color: #ADD8E6; /* Light blue background color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto; /* Added margin to center the box vertically */
+            padding: 20px;
+            background-color: white; /* White background color for the container */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+        }
+        .navbar img {
+            max-width: 50px;
+            height: auto;
+        }
+        .navbar h1 {
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar h1 span {
+            margin-left: 10px;
+        }
+        .navbar nav {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        form {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>
+            <img src="images/download.jpeg" alt="Logo"> <!-- Replace 'images/download.jpeg' with the path to your logo image -->
+            <span>Finances</span>
+        </h1>
+        <nav>
+            <a href="index1.php">Home</a>
+            <a href="Login1.html">Account Officer</a>
+            <a href="Login2.html">Office Staff</a>
+            <a href="index1.php#contact-section">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form action="Acc_officer.html" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit">Submit</button>
+            <p class="forgot-password"><a href="#">Forgot password?</a></p>
+        </form>
+    </div>
+</body>
+</html>
